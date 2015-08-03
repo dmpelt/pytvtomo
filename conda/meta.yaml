@@ -1,0 +1,34 @@
+package:
+  name: tvtomo
+  version: '1.0'
+
+source:
+  git_url: https://github.com/dmpelt/pytvtomo.git
+  git_tag: 1.0
+
+build:
+  number: 0
+
+test:
+  imports:
+    - tvtomo
+
+requirements:
+  build:
+    - python
+    - numpy
+    - cython
+
+  run:
+    - python
+    - six
+    - numpy
+
+about:
+  home: http://dmpelt.github.io/pytvtomo/
+  license: GPLv3
+  summary: 'Python implementation of the (M)FISTA method for tomography, based on Beck, A., & Teboulle, M. (2009). Fast gradient-based algorithms for constrained total variation image denoising and deblurring problems. Image Processing, IEEE Transactions on, 18(11), 2419-2434.'
+
+# See
+# http://docs.continuum.io/conda/build.html for
+# more information about meta.yaml

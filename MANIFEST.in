@@ -1,0 +1,3 @@
+recursive-include tvtomo *.pyx
+recursive-exclude tvtomo *.c
+recursive-include example *.py
