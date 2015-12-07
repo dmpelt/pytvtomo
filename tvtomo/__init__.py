@@ -25,5 +25,5 @@
 from .FISTA import FISTA
 try:
     from .astra_plugin import plugin
-except ImportError:
+except AttributeError:
     pass
