@@ -1,6 +1,6 @@
 package:
   name: tvtomo
-  version: '1.0'
+  version: '1.0.1'
 
 source:
   git_url: https://github.com/dmpelt/pytvtomo.git
@@ -21,7 +21,8 @@ requirements:
   run:
     - python
     - six
-    - numpy
+    - numpy x.x
+    - astra-toolbox
 
 about:
   home: http://dmpelt.github.io/pytvtomo/
